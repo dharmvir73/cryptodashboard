@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  color: #3c6478;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #d3d3d3;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.header {
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  margin-left: 14rem;
+  margin-bottom: -1%;
+}
+
+.news-feed {
+  height: 79.5vh;
+  width: 50vw;
+  overflow: scroll;
+  box-shadow: rgba(65, 53, 53, 0.4) 0px 30px 90px;
+  background-color: white;
+}
+
+.currency-converter {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+.app {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.exchange-rate {
+  width: 100%;
+  text-align: center;
+  background-color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 12px;
+}
+
+.InputFirst {
+  outline: none;
+  height: 20px;
+  border: none;
+  border-radius: 2px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.InputSecond {
+  outline: none;
+  height: 20px;
+  border: none;
+  border-radius: 2px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.button-30 {
+  margin: 20px;
+  margin-left: 73%;
+  align-items: center;
+  appearance: none;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.head {
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 50px;
+}
+
+.currency-options {
+  margin-left: 5px;
+  border: none;
+  outline: none;
+}
+
+.coin-container {
+  display: flex;
+  justify-content: center;
+}
+
+.coin-row {
+  display: flex;
+  flex-direction: row;
+  justify-items: start;
+  align-items: center;
+  height: 70px;
+  border-bottom: 1px solid black;
+  width: 600px;
+  justify-content: space-between;
+}
+.coin {
+  display: flex;
+  align-items: center;
+  min-width: 120px;
+}
+
+.coin h1 {
+  font-size: 1rem;
+}
+
+.coin img {
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+}
+
+.coin-symbol {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.coin-data {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.coin-price {
+  width: 110px;
+}
+
+.coin-volume {
+  width: 200px;
+}
+
+.coin-marketcap {
+  width: 230px;
+}
+.coin-percentage {
+  width: 100%;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+.title-One {
+  margin-left: 15%;
+  margin-bottom: 3%;
+}
+
+@media only screen and (max-width: 768px) {
+  .title-One {
+    display: none;
+  }
+  .app {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  .news-feed {
+    width: 100vw;
+    height: 83vh;
+    box-shadow: none;
+  }
+  .header {
+    font-size: 1rem;
+    margin-left: 34%;
+  }
+  .coin h1 {
+    font-size: 0.8rem;
+  }
+
+  .coin img {
+    height: 20px;
+    width: 20px;
+    margin-right: 2px;
+    margin-left: 10px;
+  }
+  .coin-data {
+    margin-left: 12px;
+    font-size: 10px;
+  }
+  .coin-price {
+    width: 50px;
+  }
+
+  .coin-volume {
+    width: 110px;
+  }
+
+  .coin-marketcap {
+    width: 230px;
+  }
+  .coin-percentage {
+    width: 100%;
+  }
+  .currency-converter {
+    height: 79vh;
+    box-shadow: none;
+  }
+  .button-30 {
+    margin-left: 64%;
+  }
+  .coin-symbol {
+    margin-top: 4.5%;
+    margin-right: 2%;
+    margin-left: -7%;
+  }
+  .head {
+    font-size: 1.2rem;
+  }
+}
