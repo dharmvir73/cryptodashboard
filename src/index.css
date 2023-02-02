@@ -224,6 +224,7 @@ code {
   .app {
     flex-direction: column;
     padding-bottom: 20px;
+    background-color: #fff;
   }
   .news-feed {
     width: 100%;
