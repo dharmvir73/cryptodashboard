@@ -227,6 +227,7 @@ code {
     background-color: #fff;
   }
   .news-feed {
+    padding-top: 2rem;
     width: 100%;
     height: 98vh;
     box-shadow: none;
@@ -235,7 +236,7 @@ code {
     font-size: 1rem;
   }
   .scroller {
-    height: 90vh;
+    height: 90%;
     padding: 5px;
   }
   .coin h1 {
