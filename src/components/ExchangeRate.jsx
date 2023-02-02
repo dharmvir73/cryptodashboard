@@ -7,7 +7,7 @@ const ExchangeRate = (props) => {
       ) : props.loading ? (
         <h1>Converting..</h1>
       ) : (
-        <h1>{props.exchange}</h1>
+        <h1>{props.exchange * props.amount}</h1>
       )}
       <p>
         {props.firstC} to {props.secondC}

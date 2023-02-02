@@ -84,7 +84,7 @@ const CurrencyConverter = () => {
                   className="InputSecond"
                   type="number"
                   name="currency-amount-2"
-                  value={Math.floor(exhangeRate)}
+                  value={Math.floor(exhangeRate * amount)}
                   disabled=" "
                 />
               </td>
@@ -115,6 +115,7 @@ const CurrencyConverter = () => {
           firstC={PrimaryCurrency}
           secondC={SecondaryCurrency}
           loading={loading}
+          amount={amount}
         />
       }
     </div>

@@ -21,19 +21,21 @@ const NewsFeed = () => {
   return (
     <div className="news-feed">
       <h2 className="header">Live Crpyto Prices</h2>
-      {filterCoins.map((coin) => {
-        return (
-          <Coin
-            key={coin.id}
-            name={coin.name}
-            image={coin.image}
-            symbol={coin.symbol}
-            price={coin.current_price}
-            priceChange={coin.price_change_percentage_24h}
-            volume={coin.total_volume}
-          />
-        );
-      })}
+      <div className="scroller">
+        {filterCoins.map((coin) => {
+          return (
+            <Coin
+              key={coin.id}
+              name={coin.name}
+              image={coin.image}
+              symbol={coin.symbol}
+              price={coin.current_price}
+              priceChange={coin.price_change_percentage_24h}
+              volume={coin.total_volume}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };

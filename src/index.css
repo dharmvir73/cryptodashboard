@@ -20,16 +20,23 @@ code {
 .header {
   font-size: 1.8rem;
   font-family: "Poppins", sans-serif;
-  margin-left: 14rem;
-  margin-bottom: -1%;
 }
 
 .news-feed {
-  height: 79.5vh;
   width: 50vw;
-  overflow: scroll;
   box-shadow: rgba(65, 53, 53, 0.4) 0px 30px 90px;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-feed > h2 {
+  align-self: center;
+}
+
+.scroller {
+  overflow: scroll;
+  height: 66.5vh;
 }
 
 .currency-converter {
