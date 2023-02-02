@@ -26,21 +26,25 @@ const NewsFeed = () => {
     <div className="news-feed">
       <h2 className="header">Live Crpyto Prices</h2>
       <div className="scroller">
-        {loading
-          ? "Loading...."
-          : filterCoins.map((coin) => {
-              return (
-                <Coin
-                  key={coin.id}
-                  name={coin.name}
-                  image={coin.image}
-                  symbol={coin.symbol}
-                  price={coin.current_price}
-                  priceChange={coin.price_change_percentage_24h}
-                  volume={coin.total_volume}
-                />
-              );
-            })}
+        {loading ? (
+          <div style={{ marginTop: "12rem", fontSize: "1.5em" }}>
+            Loading...
+          </div>
+        ) : (
+          filterCoins.map((coin) => {
+            return (
+              <Coin
+                key={coin.id}
+                name={coin.name}
+                image={coin.image}
+                symbol={coin.symbol}
+                price={coin.current_price}
+                priceChange={coin.price_change_percentage_24h}
+                volume={coin.total_volume}
+              />
+            );
+          })
+        )}
       </div>
     </div>
   );

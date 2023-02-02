@@ -37,6 +37,7 @@ code {
 .scroller {
   overflow: scroll;
   height: 66.5vh;
+  text-align: center;
 }
 
 .currency-converter {
